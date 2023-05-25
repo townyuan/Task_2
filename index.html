@@ -17,6 +17,12 @@
         <a href="javascript:;" class="logo"><img src="images/logo.png"></a>
         <a href="javascript:;" class="menu">首頁</a>
         <a href="javascript:;" class="menu">定價</a>
+        <a href="javascript:;" class="menu-switch"><img src="images/icons/menu.png"></a>
+        <!-- <ul class="menu-switch"><a href="javascript:;"><img src="images/icons/menu.png"></a> -->
+          <ul class="dropdown-menu jq-dropdown">
+            <li><a href="javascript:;">首頁</a></li>
+            <li><a href="javascript:;">定價</a></li>
+          </ul>
       </div>
       <div class="slogn-box">
         <h1>透過<br/>
@@ -26,7 +32,9 @@
           <a href="javascript:;" class="btn">開始使用</a>
       </div>
       <div class="arrow-box">
-        ↓↓↓
+        <img src="images/deco.png">
+        <img src="images/deco.png">
+        <img src="images/deco.png">
       </div>
       <div class="main-box">
         <div class="sub-title-1">
@@ -56,21 +64,27 @@
       <div class="sponsor-box">
         <h3>來自合作夥伴</h3>
         <div class="sponsor-logo">
-          <img src="images/enterprise.png" alt="">
-          <img src="images/enterprise1.png" alt="">
-          <img src="images/enterprise2.png" alt="">
-          <img src="images/enterprise3.png" alt="">
-          <img src="images/enterprise4.png" alt="">
-          <img src="images/enterprise5.png" alt="">
-          <img src="images/enterprise6.png" alt="">
-          <img src="images/enterprise7.png" alt="">
-          <img src="images/enterprise8.png" alt="">
-          <img src="images/enterprise9.png" alt="">
-          <img src="images/enterprise10.png" alt="">
-          <img src="images/enterprise11.png" alt="">
-          <img src="images/enterprise12.png" alt="">
+          <div class="logo-1">
+            <img src="images/enterprise1.png" alt="">
+            <img src="images/enterprise2.png" alt="">
+            <img src="images/enterprise3.png" alt="">
+            <img src="images/enterprise4.png" alt="">
+            <img src="images/enterprise5.png" alt="">
+            <img src="images/enterprise6.png" alt="">
+            <img src="images/enterprise7.png" alt="">
+          </div>
+          <div class="logo-2">
+            <img src="images/enterprise6.png" alt="">
+            <img src="images/enterprise7.png" alt="">
+            <img src="images/enterprise8.png" alt="">
+            <img src="images/enterprise9.png" alt="">
+            <img src="images/enterprise10.png" alt="">
+            <img src="images/enterprise11.png" alt="">
+            <img src="images/enterprise12.png" alt="">
+          </div>
         </div>
       </div>
+
       <div class="feedback-box">
         <!-- feedback-card satrt -->
         <div class="feedback-card">
@@ -149,30 +163,30 @@
         <a class="filter" href="javascript:;">
           <span>篩選</span><img src="images/icons/sliders-horizontal.png">
         </a>
-        <div class="menubar">
-          <a href="">全部</a>
-          <a href="">聊天</a>
-          <a href="">影像辨識</a>
-          <a href="">翻譯</a>
-          <a href="">行銷</a>
-          <a href="">客服</a>
-          <a href="">生產力</a>
-        </div>
         <div class="sort">
-          <i><img src="images/icons/keyboard-arrow-down.png"></i>
           <select>
             <option value="option1">由新到舊</option>
             <option value="option2">由舊到新</option>
             <option value="option3">依時間序</option>
           </select>
+          <i><img src="images/icons/keyboard-arrow-down.png"></i>
+        </div>
+        <div class="menubar">
+          <a class="active" href="javascript:;">全部</a>
+          <a href="javascript:;">聊天</a>
+          <a href="javascript:;">影像辨識</a>
+          <a href="javascript:;">翻譯</a>
+          <a href="javascript:;">行銷</a>
+          <a href="javascript:;">客服</a>
+          <a href="javascript:;">生產力</a>
         </div>
       </div>
       <!-- content start -->
       <div class="content">
         <div class="card">
-          <div class="photo"><a href="#"><img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/tool1.png" alt=""></a></div>
+          <div class="photo"><a href="javascript:;"><img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/tool1.png" alt=""></a></div>
           <div class="info">
-            <h3><a href="#">Chatbot Builder</a></h3>
+            <h3><a href="javascript:;">Chatbot Builder</a></h3>
             <p>建立智能化的聊天機器人，解答常見問題、提供客戶支援、收集反饋等。</p>
           </div>
           <div class="author">
@@ -180,14 +194,14 @@
             <div class="name">卡卡</div>
           </div>
           <div class="item">
-            <a href="#">#聊天</a>
-            <a href="#" class="share"></a>
+            <a href="javascript:;">#聊天</a>
+            <a href="javascript:;" class="share"></a>
           </div>
         </div>
         <div class="card">
-          <div class="photo"><a href="#"><img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/tool2.png" alt=""></a></div>
+          <div class="photo"><a href="javascript:;"><img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/tool2.png" alt=""></a></div>
           <div class="info">
-            <h3><a href="#">Image Recognition Platform</a></h3>
+            <h3><a href="javascript:;">Image Recognition Platform</a></h3>
             <p>專業的圖像識別平台，識別圖像、分類、標記等。</p>
           </div>
           <div class="author">
@@ -195,14 +209,14 @@
             <div class="name">杰杰</div>
           </div>
           <div class="item">
-            <a href="#">#影像辨識</a>
-            <a href="#" class="share"></a>
+            <a href="javascript:;">#影像辨識</a>
+            <a href="javascript:;" class="share"></a>
           </div>
         </div>
         <div class="card">
-          <div class="photo"><a href="#"><img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/tool3.png" alt=""></a></div>
+          <div class="photo"><a href="javascript:;"><img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/tool3.png" alt=""></a></div>
           <div class="info">
-            <h3><a href="#">Chatbot Builder</a></h3>
+            <h3><a href="javascript:;">Chatbot Builder</a></h3>
             <p>建立智能化的聊天機器人，解答常見問題、提供客戶支援、收集反饋等。</p>
           </div>
           <div class="author">
@@ -210,14 +224,14 @@
             <div class="name">琪琪</div>
           </div>
           <div class="item">
-            <a href="#">#翻譯</a>
-            <a href="#" class="share"></a>
+            <a href="javascript:;">#翻譯</a>
+            <a href="javascript:;" class="share"></a>
           </div>
         </div>
         <div class="card">
-          <div class="photo"><a href="#"><img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/tool4.png" alt=""></a></div>
+          <div class="photo"><a href="javascript:;"><img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/tool4.png" alt=""></a></div>
           <div class="info">
-            <h3><a href="#">Sentiment Analysis API</a></h3>
+            <h3><a href="javascript:;">Sentiment Analysis API</a></h3>
             <p>自動識別文本中的情感傾向，包括正向、負向和中性等。適用於情感分析、社交媒體監控、市場調查等。</p>
           </div>
           <div class="author">
@@ -225,14 +239,14 @@
             <div class="name">卡卡</div>
           </div>
           <div class="item">
-            <a href="#">#行銷</a>
-            <a href="#" class="share"></a>
+            <a href="javascript:;">#行銷</a>
+            <a href="javascript:;" class="share"></a>
           </div>
         </div>
         <div class="card">
-          <div class="photo"><a href="#"><img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/tool5.png" alt=""></a></div>
+          <div class="photo"><a href="javascript:;"><img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/tool5.png" alt=""></a></div>
           <div class="info">
-            <h3><a href="#">Fraud Detection Platform</a></h3>
+            <h3><a href="javascript:;">Fraud Detection Platform</a></h3>
             <p>預防詐騙活動，適用於銀行、金融、電商等。</p>
           </div>
           <div class="author">
@@ -240,14 +254,14 @@
             <div class="name">杰杰</div>
           </div>
           <div class="item">
-            <a href="#">#客服</a>
-            <a href="#" class="share"></a>
+            <a href="javascript:;">#客服</a>
+            <a href="javascript:;" class="share"></a>
           </div>
         </div>
         <div class="card">
-          <div class="photo"><a href="#"><img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/tool6.png" alt=""></a></div>
+          <div class="photo"><a href="javascript:;"><img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/tool6.png" alt=""></a></div>
           <div class="info">
-            <h3><a href="#">Voice Assistant SDK</a></h3>
+            <h3><a href="javascript:;">Voice Assistant SDK</a></h3>
             <p>通過語音控制應用程式、設備，實現多種功能，例如播放音樂、查詢天氣、發送信息等。</p>
           </div>
           <div class="author">
@@ -255,8 +269,8 @@
             <div class="name">琪琪</div>
           </div>
           <div class="item">
-            <a href="#">#生產力</a>
-            <a href="#" class="share"></a>
+            <a href="javascript:;">#生產力</a>
+            <a href="javascript:;" class="share"></a>
           </div>
         </div>
       </div>
@@ -327,7 +341,7 @@
 
     <div class="slogn-box2">
       <h2>現在就來建立屬於你的服務吧</h2>
-        <a href="javascript:;" class="btn">開始使用</a>
+        <a href="javascript:;" class="btn">開始使用<img src="images/icons/call-made.png"></a>
     </div>
     <div class="submenu-box">
       <div class="menu">
@@ -345,7 +359,7 @@
         <a href="javascript:;">Twitter</a>
         <a href="javascript:;">Instagram</a>
       </div>
-      <a class="gotop" href="javascript:;">Back to top <img src="images/icons/arrow-upward.png"></a>
+      <a class="back-to-top" href="javascript:;">Back to top <img src="images/icons/arrow-upward.png"></a>
     </div>
     <!-- footer end -->
   </div>
