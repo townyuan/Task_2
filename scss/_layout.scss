@@ -4,13 +4,13 @@ body{
 }
 
 .wraper{
-  max-width: 1920px;
   margin: 0 auto;
 }
 
 .header{
   max-width: 1298px;
   margin: 0 auto;
+  padding: 0 20px;
   padding-bottom: 100px;
 }
 
@@ -20,8 +20,17 @@ body{
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #fff;
+  position: relative;
+  
+  li a{
+    color: #fff;
 
-  a.logo{
+    &:hover{
+      color: #ccc;
+    }
+  }
+
+  li.logo{
     display: block;
     flex: 1;
 
@@ -29,9 +38,8 @@ body{
       width: 200px;
     }
   }
-  a.menu{
+  li.menu{
     width: 60px;
-    font-size: 16px;
     font-weight: 700;
     line-height: 24px;
     color: #fff;
@@ -43,12 +51,16 @@ body{
   }
   .menu-switch{
     display: none;
+    position: absolute;
+    top:22px;
+    right: 3px;
   }
 
   .dropdown-menu {
     display: none;
     width: 100%;
     margin: 5px 0;
+
     li {
       display: flex;
       justify-content: end;
@@ -64,6 +76,8 @@ body{
   }
   &.active {
     display: block;
+    background-color: #F2F2F2;
+    color: #000;
   }
 }
 
@@ -157,13 +171,13 @@ body{
   font-weight: 900;
   margin-bottom: 50px;
 
-  .sub-title-1{
-    width: 33%;
+  h2.sub-title-1{
+    width: 30%;
     font-size: 32px;
     line-height: 1.2;
   }
-  .sub-title-2{
-    width: 67%;
+  p.sub-title-2{
+    width: 70%;
     font-size: 48px;
     line-height: 1.5;
   }
@@ -197,7 +211,6 @@ body{
     }
 
     p{
-      font-size: 16px;
       font-weight: 400;
       line-height: 1.5;
     }
@@ -242,6 +255,8 @@ body{
     flex-wrap: wrap;
     position: relative;
     overflow: hidden;
+    overflow-x: scroll; /*出現 X 軸*/
+    white-space: nowrap; /*搭配 scroll */
 
     .logo-1, .logo-2{
       display: flex;
@@ -287,7 +302,6 @@ body{
     }
     p{
       color: #fff;
-      font-size: 16px;
       line-height: 1.5;
       margin-bottom: 20px;
       flex-grow: 1;
@@ -308,7 +322,6 @@ body{
       .bio{
         flex: 1;
         color: #fff;
-        font-size: 16px;
         line-height: 1.5;
       }
     }
@@ -320,10 +333,15 @@ body{
 /* container */
 .container{
   width: 100%;
-  padding: 160px 310px;
+  padding: 160px 20px;
   background-color: #fff;
   border-radius: 160px;
   margin-bottom: 158px;
+}
+
+.content{
+  max-width: 1298px;
+  margin: 0 auto;
 
   h2{
     font-size: 80px;
@@ -334,6 +352,7 @@ body{
   }
 
   .search-box {
+    max-width: 1298px;
     background: #F2F2F2;
     border-radius: 16px;
     padding: 20px 50px;
@@ -341,9 +360,8 @@ body{
     position: relative;
     margin-bottom: 30px;
 
-    input[type="text"] {
+    input[type="search"] {
       border: none;
-      font-size: 16px;
       line-height: 1.5;
       width: 100%;
       padding: 5px;
@@ -352,7 +370,7 @@ body{
     i {
 			position: absolute;
 			left: 30px;
-			top: 30px;
+			top: 27px;
 			color: #999;
 
       img{
@@ -362,6 +380,7 @@ body{
   }
 
   .filter-box{
+    margin-bottom: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -392,7 +411,6 @@ body{
 			position: relative;
 			font-style: normal;
 			font-weight: 400;
-			font-size: 16px;
 			line-height: 1.5;
 			text-align: center;
 			color: #000;
@@ -411,7 +429,6 @@ body{
         appearance: none;
         color: #000;
         border: none;
-        font-size: 16px;
         list-style: 1.5;
       }
 
@@ -432,13 +449,14 @@ body{
       flex: 1;
       display: flex;
       justify-content: center;
+      overflow-x: scroll; /*出現 X 軸*/
+      white-space: nowrap; /*搭配 scroll */
 
       a{
         display: block;
         margin: 0 5px;
         padding: 8px 16px;
         border-radius: 16px;
-        font-size: 16px;
         font-weight: 400;
         line-height: 1.5;
         color: #919191;
@@ -457,7 +475,8 @@ body{
     }
   }
 
-  .content{
+  .card-content{
+    max-width: 1298px;
     margin: 0 auto;
     padding: 30px 0;
     display: flex;
@@ -495,14 +514,6 @@ body{
         line-height: 24px;
         font-weight: 900;
         margin-bottom: 12px;
-
-        a{
-          color: #020202;
-
-          &:hover{
-            color: #F2F2F2;
-          }
-        }
       }
       p{
         font-size: 14px;
@@ -518,7 +529,6 @@ body{
       display: flex;
       justify-content: space-between;
       align-items: center;
-      font-size: 16px;
       line-height: 24px;
       color: #020202;
 
@@ -534,7 +544,6 @@ body{
     }
     .item{
       padding: 20px 32px;
-      font-size: 16px;
       line-height: 24px;
       color: #020202;
       display: flex;
@@ -560,6 +569,7 @@ body{
 
 
   .pager{
+    max-width: 1298px;
     display: flex;
     justify-content: end;
     align-items: center;
@@ -630,7 +640,6 @@ body{
       .accordion-content {
         display: none;
         padding: 10px 30px 30px 80px;
-        font-size: 16px;
         line-height: 1.5;
         font-weight: 400;
       }
@@ -717,7 +726,6 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 16px;
   font-weight: 700;
   color: #fff;
 
@@ -739,7 +747,7 @@ body{
   .back-to-top{
     text-align: right;
     flex: 1;
-    
+
     color: #fff;
 
     img{

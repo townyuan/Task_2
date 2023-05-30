@@ -1,11 +1,7 @@
 /* pad Horizontal =========================================== */
-@media screen and (max-width:1180px){
-  .wraper{
-    margin: 0;
-  }
-
+@media screen and (max-width:960px){
   .header{
-    margin: 0 20px;
+    padding: 0 20px;
     padding-bottom: 60px;
   }
 
@@ -23,16 +19,21 @@
   }
 
   .slogn-box{
-
     h1{
-      font-size: 90px;
+      font-size: 70px;
     }
   }
 
   .main-box{
-
-    .sub-title-2{
-      font-size: 42px;
+    h2.sub-title-1{
+      width: 30%;
+      font-size: 28px;
+      line-height: 1.5;
+    }
+    p.sub-title-2{
+      width: 70%;
+      font-size: 33px;
+      line-height: 1.5;
     }
   }
 
@@ -48,16 +49,15 @@
     margin: 100px 0;
   }
 
-
-  /* container */
   .container{
-    padding: 20px;
-    border-radius: 50px;
+    padding: 100px 20px;
+    border-radius: 80px;
     margin-bottom: 60px;
+  }
+  .content{
 
     h2{
       font-size: 70px;
-      margin: 60px 0 32px 0;
     }
 
     .search-box {
@@ -65,10 +65,61 @@
     }
 
     .filter-box{
-      margin-bottom: 20px;
+      display: block;
+
+      a.filter{
+        float: left;
+        margin-bottom: 20px;
+        width: 40%;
+        text-align: center;
+
+        span{
+          display: inline-block;
+          margin-right: 5px;
+        }
+
+        img{
+          width: 17px;
+          margin: -5px 0 0 3px;
+          vertical-align: middle;
+        }
+      }
+
+      .sort{
+        float: right;
+        margin-bottom: 20px;
+        width: 45%;
+
+        i {
+          right: 50px;
+        }
+      }
+
+      .menubar{
+        clear: both;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px 0;
+
+        a{
+          display: inline-block;
+
+          &:hover{
+            background-color: #F2F2F2;
+            color: #000;
+          }
+        }
+
+        .active{
+          background-color: #F2F2F2;
+          color: #000;
+        }
+      }
     }
 
-    .content{
+    .card-content{
       ppadding: 20px 0;
     }
   }
@@ -92,12 +143,10 @@
 }
 
 
-
 /* pad Vertical =========================================== */
-@media screen and (max-width:821px){
+@media screen and (max-width:768px){
 
   .header{
-    margin: 0 15px;
     padding-bottom: 60px;
   }
 
@@ -176,66 +225,20 @@
   }
 
   .container{
-    padding: 10px;
-    border-radius: 10px;
+    padding: 80px 20px;
+    border-radius: 80px;
     margin-bottom: 60px;
+  }
+
+  .content{
 
     h2{
-      font-size: 50px;
-      margin: 60px 0 32px 0;
-      text-align: center;
+      font-size: 60px;
       line-height: 1.2;
     }
 
-    .search-box {
-      margin-bottom: 15px;
-    }
-
-    .filter-box{
-
-      a.filter{
-        width: 110px;
-        padding: 20px 10px 20px 20px;
-
-        span{
-          display: inline-block;
-          margin-right: 5px;
-        }
-
-        img{
-          width: 17px;
-          vertical-align: middle;
-        }
-      }
-
-      .sort{
-
-        select {
-          width: 130px;
-          padding: 20px 32px 20px 20px;
-        }
-
-        i {
-          right: 20px;
-        }
-      }
-
-      .menubar{
-        clear: both;
-        width: 100%;
-        display: inline-block;
-        text-align: center;
-
-        a{
-          display: inline-block;
-        }
-      }
-    }
-
-    .content{
-      width: 100%;
-      margin: 0 auto;
-      padding: 30px 0;
+    .card-content{
+      ppadding: 20px 0;
 
       .card{
         width: 49%;
@@ -243,24 +246,53 @@
     }
   }
 
+
   .common-problem{
-    margin: 60px auto;
-    padding: 15px;
+    flex-wrap: wrap;
 
     h3.title{
-      width: 25%;
+      width: 100%;
+      font-size: 26px;
+      margin-bottom: 20px;
+    }
+    .question-box{
+      width: 100%;
+
+      .accordion{
+
+        .accordion-header {
+          padding: 15px 20px;
+        }
+
+        .accordion-icon {
+          margin-right: 25px;
+
+          img{
+            width: 20px;
+          }
+        }
+
+        .accordion-content {
+          padding: 10px 30px 20px 30px;
+        }
+      }
     }
   }
 
+
+
   .slogn-box2{
-    margin: 0 auto 60px auto;
+    margin: 0 20px 60px 20px;
   }
 
   .submenu-box{
-    margin: 100px auto 20px auto;
-    padding: 50px 15px;
+    margin: 100px 10px 10px 10px;
+    padding: 80px 15px;
+    flex-wrap: wrap;
 
     .menu{
+      order: 2;
+      width: 100%;
 
       a{
         display: block;
@@ -277,32 +309,57 @@
     }
 
     .sublogo{
-      width: 240px;
+      width: 60%;
+      margin-bottom: 30px;
     }
   }
 
+
   .footer{
-    padding: 0 15px;
+    flex-wrap: wrap;
+
+    h4.copyright{
+      width: 50%;
+      order: 1;
+      margin-right: 10px;
+    }
+
+    .share{
+      width: 100%;
+      order: 3;
+      margin: 20px 0 0 0;
+    }
+
+    .back-to-top{
+      width: 50%;
+      order: 2;
+    }
   }
+
 }
+
+
 
 
 
 /* mobile =========================================== */
 @media screen and (max-width:414px){
 
+  .header{
+    padding: 0 10px;
+    padding-bottom: 60px;
+  }
+
   .topbar{
-    padding: 10px 0px;
     flex-wrap: wrap;
 
-    a.menu{
+    li.menu{
       display: none;
     }
     .menu-switch{
       display: block;
     }
   }
-
 
   .slogn-box{
 
@@ -321,22 +378,22 @@
     }
   }
 
+
   .main-box{
     display: block;
     margin-bottom: 30px;
 
-    .sub-title-1{
+    h2.sub-title-1{
       width: 100%;
       font-size: 20px;
       margin-bottom: 24px;
     }
-    .sub-title-2{
+    p.sub-title-2{
       width: 100%;
       font-size: 32px;
       line-height: 1.2;
     }
   }
-
 
   .spotligth-box{
     flex-wrap: wrap;
@@ -358,26 +415,24 @@
     }
   }
 
-  .sponsor-box{
-    margin: 60px 0;
+  // .sponsor-box{
+  //   margin: 60px 0;
 
-    h3{
-      font-size: 20px;
-      margin-bottom: 25px;
-    }
+  //   h3{
+  //     font-size: 20px;
+  //     margin-bottom: 25px;
+  //   }
 
-    .sponsor-logo{
-      display: blok;
-      max-height: 120px;
-      overflow-x: scroll; /*出現 X 軸*/
-      white-space: nowrap; /*搭配 scroll */
+  //   .sponsor-logo{
+  //     display: blok;
+  //     max-height: 120px;
 
-      .logo-1, .logo-2{
-        display: inline-block;
-        flex-wrap: nowrap;
-      }
-    }
-  }
+  //     .logo-1, .logo-2{
+  //       display: inline-block;
+  //       flex-wrap: nowrap;
+  //     }
+  //   }
+  // }
 
   .feedback-box{
     margin: 0;
@@ -389,83 +444,27 @@
     }
   }
 
+
+
+
+
   .container{
-    padding: 10px;
+    padding: 80px 10px;
     border-radius: 10px;
-    margin-bottom: 158px;
+    margin-bottom: 60px;
+  }
+
+  .content{
 
     h2{
       font-size: 32px;
-      margin: 80px 0 32px 0;
+      margin: 0 0 32px 0;
       text-align: center;
       line-height: 1.2;
     }
 
-
-    .search-box {
-      margin-bottom: 15px;
-    }
-
-
-    .filter-box{
-      display: block;
-
-      a.filter{
-        float: left;
-        width: 40%;
-        text-align: center;
-
-        span{
-          display: inline-block;
-          margin-right: 5px;
-        }
-
-        img{
-          width: 17px;
-          margin: -5px 0 0 3px;
-          vertical-align: middle;
-        }
-      }
-
-      .sort{
-        float: right;
-        width: 45%;
-
-        i {
-          right: 50px;
-        }
-      }
-
-      .menubar{
-        clear: both;
-        width: 100%;
-        display: inline-block;
-        margin: 10px 0;
-        overflow-x: scroll; /*出現 X 軸*/
-        white-space: nowrap; /*搭配 scroll */
-        padding-bottom: 10px;
-
-        a{
-          display: inline-block;
-
-          &:hover{
-            background-color: #F2F2F2;
-            color: #000;
-          }
-        }
-
-        .active{
-          background-color: #F2F2F2;
-          color: #000;
-        }
-      }
-    }
-
-    .content{
-      width: 100%;
-      margin: 0 auto;
-      padding: 30px 0;
-      display: block;
+    .card-content{
+      ppadding: 0;
 
       .card{
         width: 100%;
@@ -473,8 +472,8 @@
     }
   }
 
-
   .common-problem{
+    margin: 80px 10px;
     flex-wrap: wrap;
 
     h3.title{
@@ -507,6 +506,7 @@
   }
 
   .slogn-box2{
+    margin: 120px 10px;
 
     h2{
       font-size: 32px;
@@ -515,12 +515,8 @@
   }
 
   .submenu-box{
-    padding: 80px 10px;
-    flex-wrap: wrap;
 
     .menu{
-      order: 2;
-      width: 100%;
 
       a{
         font-size: 48px;
@@ -536,22 +532,9 @@
     }
   }
 
+
   .footer{
-    margin: 30px auto 30px auto;
-    flex-wrap: wrap;
-
-    h4.copyright{
-      order: 1;
-      margin-right: 100px;
-    }
-
-    .share{
-      order: 3;
-      margin: 30px 0 0 0;
-    }
-
-    .back-to-top{
-      order: 2;
-    }
+    margin: 0 10px 30px 10px;
   }
+
 }
