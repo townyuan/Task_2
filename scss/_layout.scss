@@ -605,6 +605,7 @@ body{
 .common-problem{
   max-width: 1298px;
   margin: 150px auto;
+  padding: 0 20px;
   display: flex;
   justify-content: space-between;
   color: #F2F2F2;
@@ -653,6 +654,7 @@ body{
   max-width: 1298px;
   text-align: center;
   margin: 0 auto 150px auto;
+  padding: 0 20px;
 
   h2{
     font-size: 48px;
@@ -695,10 +697,10 @@ body{
   margin: 100px auto 20px auto;
   border-top: 1px solid #F2F2F2;
   border-bottom: 1px solid #F2F2F2;
-  padding: 80px 0;
+  padding: 80px 20px;
   display: flex;
   justify-content: space-between;
-  
+
   .menu{
 
     a{
@@ -723,6 +725,7 @@ body{
 .footer{
   max-width: 1298px;
   margin: 0 auto 30px auto;
+  padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
